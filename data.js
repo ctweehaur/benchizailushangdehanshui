@@ -11,7 +11,7 @@ const lessonTitle = [
 ];
 
 const lessonData = [
-    // 🌟 第 1 节：震撼弹
+    // 🌟 第 1 节：震撼弹 (参考 Screenshot 2026-06-28 at 6.03.44 PM.png)
     ["震撼弹\n", "zhèn hàn dàn", "shocking bombshell", "kejutan besar / bom jangka"],
     ["没有", "méi yǒu", "there is no", "tidak ada / tanpa"],
     ["硝烟", "xiāo yān", "gunsmoke", "asap meriam"],
@@ -33,12 +33,9 @@ const lessonData = [
     ["给", "gěi", "to / for", "kepada / buat"],
     ["家人", "jiā rén", "family", "ahli keluarga"],
     ["扔出了", "rēng chū le", "threw out", "melemparkan"],
-    ["震撼弹", "zhèn hàn dàn", "bombshell", "kejutan yang amat besar"],
-    ["。\n", "", "", ""],
+    ["震撼弹\n\n", "zhèn hàn dàn", "bombshell", "kejutan yang amat besar"], // 👈 句尾加 \n\n 换行并优雅切换至下一个精美背景
 
-    ["\n", "", "", ""], // 👈 独立的 \n 切出“第2段”卡片外框
-
-    // 🌟 第 2 节：考验与挑战
+    // 🌟 第 2 节：考验与挑战 (参考 Screenshot 2026-06-28 at 6.03.50 PM.png)
     ["考验", "kǎo yàn", "trial", "ujian"],
     ["与", "yǔ", "and", "dan"],
     ["挑战\n", "tiǎo zhàn", "challenge", "cabaran"],
@@ -69,18 +66,15 @@ const lessonData = [
     ["路上\n", "lù shàng", "on the road", "jalan raya"],
     ["肩负起\n", "jiān fù qǐ", "shoulder burden", "memikul tanggungjawab"],
     ["让", "ràng", "let / make", "membiarkan"],
-    ["门户", "mén hù", "households / doors", "pintu rumah / pelanggan"],
+    ["订户", "dì hù", "customer", "pelanggan"], // 👈 配合大马小学规范，统一使用“订户”
     ["及时", "jí shí", "in time", "tepat pada masanya"],
     ["吃上", "chī shàng", "get to eat", "dapat makan"],
     ["热腾腾", "rè téng téng", "piping hot", "panas-panas / berasap panas"],
     ["美食", "měi shí", "delicious food", "makanan lazat"],
     ["的", "de", "particle", "yang"],
-    ["重任", "zhòng rèn", "heavy mission", "tanggungjawab berat"],
-    ["。\n", "", "", ""],
+    ["重任\n\n", "zhòng rèn", "heavy mission", "tanggungjawab berat"], // 👈 完美换节
 
-    ["\n", "", "", ""], // 👈 切入第 3 节
-
-    // 🌟 第 3 节：奔波
+    // 🌟 第 3 节：奔波 (参考 Screenshot 2026-06-28 at 6.03.55 PM.png)
     ["奔波\n", "bēn bō", "rushing around", "ke sana ke mari / membanting tulang"],
     ["阳光明媚", "yáng guāng míng mèi", "bright sunshine", "cahaya matahari cerah"],
     ["时\n", "shí", "when", "apabila / sewaktu"],
@@ -115,12 +109,9 @@ const lessonData = [
     ["送达", "sòng dá", "deliver to", "menghantar sampai ke"],
     ["订户", "dì hù", "subscriber", "pelanggan / pemesan"],
     ["的", "de", "particle", "punya"],
-    ["手上", "shǒu shàng", "hands", "tangan / ke tangan"],
-    ["。\n", "", "", ""],
+    ["手上\n\n", "shǒu shàng", "hands", "tangan / ke tangan"], // 👈 完美换节
 
-    ["\n", "", "", ""], // 👈 切入第 4 节
-
-    // 🌟 第 4 节：坚持
+    // 🌟 第 4 节：坚持 (参考 Screenshot 2026-06-28 at 6.04.03 PM.jpg)
     ["坚持\n", "jiān chí", "persistence", "ketabahan / kecekalan"],
     ["他", "tā", "he", "Dia"],
     ["深知", "shēn zhī", "know well", "amat mengetahui / sangat sedar"],
@@ -129,7 +120,7 @@ const lessonData = [
     ["是", "shì", "is", "adalah"],
     ["承诺\n", "chéng nuò", "promise", "janji / komitmen"],
     ["偶尔", "ǒu ěr", "occasionally", "sekali-sekala / kadangkala"],
-    ["因为", "yīn wèi", "because", "kerana"],
+    ["because", "yīn wèi", "because", "kerana"],
     ["身体状态不佳", "shēn tǐ zhuàng tài bù jiā", "unwell", "kesihatan kurang baik"],
     ["或", "huò", "or", "atau"],
     ["路况\n", "lù kuàng", "road condition", "keadaan jalan raya"],
@@ -145,12 +136,9 @@ const lessonData = [
     ["只能", "zhǐ néng", "could only", "hanya mampu / hanya boleh"],
     ["化作", "huà zuò", "turn into", "menjadi / bertukar menjadi"],
     ["一声", "yì shēng", "a sound of", "satu"],
-    ["叹息", "tàn xī", "sigh", "keluhan"],
-    ["。\n", "", "", ""],
+    ["叹息\n\n", "tàn xī", "sigh", "keluhan"], // 👈 完美换节
 
-    ["\n", "", "", ""], // 👈 切入第 5 节
-
-    // 🌟 第 5 节：汗水与游戏
+    // 🌟 第 5 节：风里雨里 (参考 Screenshot 2026-06-28 at 6.04.03 PM.jpg 下半部)
     ["他", "tā", "he", "Dia"],
     ["在", "zài", "in", "di / dalam"],
     ["风里雨里", "fēng lǐ yǔ lǐ", "through storm", "redah angin dan hujan"],
@@ -180,12 +168,9 @@ const lessonData = [
     ["时间", "shí jiān", "time", "masa"],
     ["追逐", "zhuī zhú", "chase", "kejar-mengejar / mengejar"],
     ["的", "de", "particle", "yang"],
-    ["游戏", "yóu xì", "game", "permainan"],
-    ["。\n", "", "", ""],
+    ["游戏\n\n", "yóu xì", "game", "permainan"], // 👈 完美换节
 
-    ["\n", "", "", ""], // 👈 切入第 6 节
-
-    // 🌟 第 6 节：温暖与动力
+    // 🌟 第 6 节：温暖与动力 (参考 Screenshot 2026-06-28 at 6.04.09 PM.png)
     ["温暖", "wēn nuǎn", "warmth", "Kehangatan"],
     ["与", "yǔ", "and", "dan"],
     ["动力\n", "dòng lì", "motivation", "motivasi / dorongan"],
@@ -218,12 +203,9 @@ const lessonData = [
     ["的", "de", "particle", "punya"],
     ["慰藉", "wèi jiè", "consolation", "sumber penghibur / kelegaan"],
     ["与", "yǔ", "and", "dan"],
-    ["动力", "dòng lì", "motivation", "dorongan / kekuatan"],
-    ["。\n", "", "", ""],
+    ["动力\n\n", "dòng lì", "motivation", "dorongan / kekuatan"], // 👈 完美换节
 
-    ["\n", "", "", ""], // 👈 切入第 7 节
-
-    // 🌟 第 7 节：希冀
+    // 🌟 第 7 节：希冀 (参考 Screenshot 2026-06-28 at 6.04.15 PM.jpg)
     ["希冀\n", "xī jì", "hope", "Harapan / impian"],
     ["落寞", "luò mò", "lonely", "kesepian / kelesuan jiwa"],
     ["、", "", "", ""],
@@ -256,7 +238,7 @@ const lessonData = [
     ["跨越", "kuà yuè", "stride across", "merentasi / melampaui"],
     ["焦躁", "jiāo zào", "irritable", "kegelisahan / terburu-buru"],
     ["的", "de", "particle", "yang"],
-    ["隔阂\n", "g&eacute; h&eacute;", "barrier", "jurang / sempadan pemisah"],
+    ["隔阂\n", "gé hé", "barrier", "jurang / sempadan pemisah"],
     ["一同", "yì tóng", "together", "bersama-sama"],
     ["迈向\n", "mài xiàng", "stride towards", "melangkah menuju ke"],
     ["繁荣昌盛\n", "fán róng chāng shèng", "prosperous", "keamanan dan kemakmuran / kegemilangan"],
@@ -272,7 +254,7 @@ const lessonAppreciation = [
   "【第2节：勇敢的决定】这一节写出了现实的压力（长长的账单）。爸爸虽然很烦恼，眉头都皱了，但他没有逃避。他勇敢、坚定地（毅然）戴上头盔、驾着摩托车出门，决定用汗水换取家人的温饱，当起送餐员。",
   "【第3节：马路上的奔波】诗人用对比的方法写爸爸工作有多辛苦：大太阳时不怕晒，下暴雨时不怕淋。在车子超级多（车水马龙）的大街小巷里，他总是挺直腰板、非常认真（兢兢业业）地把热腾腾的饭菜送到顾客手上。",
   "【第4节：流泪的委屈】这一节写到了送餐员的心酸。爸爸觉得准时送到是一种答应别人的信用（承诺）。但有时候因为生病或者路上塞车迟到了，换来的却是顾客的骂声（埋怨）。满肚子的伤心和辛苦，最后只能变成一声大大的叹息。",
-  "【第5节：和时间赛跑】爸爸在风雨里赶路，脸上全身都是湿的，分不清楚是汗水还是雨水。稳度身体超级累（疲惫）、样子也很憔悴，但他还是要守规矩，在马路上继续和时间赛跑，一定要完成自己的工作任务。",
+  "【第5节：和时间赛跑】爸爸在风雨里赶路，脸上全身都是湿的，分不清楚是汗水还是雨水。虽然身体超级累（疲惫）、样子也很憔悴，但他还是要守规矩，在马路上继续和时间赛跑，一定要完成自己的工作任务。",
   "【第6节：小小的幸福】是什么让爸爸能坚持下去？这一节写到了生活中的阳光：顾客说的一声‘谢谢’、送的一罐冷饮，还有回到家看到家人睡得很甜。这些小小的关心（慰藉），就是全天下爸爸最大的动力（Motivation）。",
   "【第7节：最美好的愿望】诗歌的最后，把感情升华（Level up）了。爸爸不只希望自己的汗水没有白费，他还希望人们能因为看到了彼此的辛苦，而变得更愿意包容、更有同理心（Empathy，会为别人着想），一起把社会变得更好。"
 ];
