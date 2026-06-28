@@ -11,155 +11,183 @@ const lessonTitle = [
 ];
 
 const lessonData = [
-    // 🌟 第 1 节：震撼弹 (通过在每行末尾字的文本中加入 \n 实现“内换行”)
-    ["震撼弹\n", "zhèn hàn dàn", "shocking bombshell", "kejutan besar / bom jangka"], // 👈 藏在字里换行
+    // 🌟 第 1 节：震撼弹 (精准分词，仅在每句最后一个卡片内加 \n 来左对齐换行)
+    ["震撼弹\n", "zhèn hàn dàn", "shocking bombshell", "kejutan besar / bom jangka"],
+    
     ["没有", "méi yǒu", "there is no", "tidak ada / tanpa"],
-    ["硝烟", "xiāo yān", "gunsmoke", "asap meriam / asap senapang"],
+    ["硝烟", "xiāo yān", "gunsmoke", "asap meriam"],
     ["的", "de", "particle", "yang"],
-    ["战争\n", "zhàn zhēng", "war", "peperangan / perang"], // 👈 藏在字里换行
+    ["战争\n", "zhàn zhēng", "war", "peperangan / perang"],
+    
     ["悄然", "qiǎo rán", "quietly / silently", "secara senyap / diam-diam"],
-    ["降临\n", "jiàng lín", "befall / arrive", "datang melanda / menjelma"], // 👈 藏在字里换行
+    ["降临\n", "jiàng lín", "befall / arrive", "datang melanda / menjelma"],
+    
     ["回到", "huí dào", "return to", "pulang ke / kembali ke"],
-    ["家里\n", "jiā lǐ", "home / inside the house", "rumah / dalam rumah"], // 👈 藏在字里换行
+    ["家里\n", "jiā lǐ", "home", "rumah / dalam rumah"],
+    
     ["他", "tā", "he", "dia"],
     ["从", "cóng", "from", "dari"],
-    ["公事包\n", "gōng shì bāo", "briefcase", "beg kerja / beg bimbit"], // 👈 藏在字里换行
+    ["公事包\n", "gōng shì bāo", "briefcase", "beg kerja / beg bimbit"],
+    
     ["拿出了", "ná chū le", "took out", "mengeluarkan"],
     ["公司", "gōng sī", "company", "syarikat"],
-    ["给", "gěi", "give", "bagi / memberi / kepada"],
+    ["给", "gěi", "give", "memberi"],
     ["他", "tā", "him", "dia"],
     ["的", "de", "particle", "yang"],
-    ["信\n", "xìn", "letter", "surat"], // 👈 藏在字里换行
+    ["信\n", "xìn", "letter", "surat"],
+    
     ["给", "gěi", "to / for", "kepada / buat"],
-    ["家人", "jiā rén", "family members", "ahli keluarga"],
-    ["扔出了", "rēng chū le", "threw out / dropped", "melemparkan / memberikan"],
+    ["家人", "jiā rén", "family", "ahli keluarga"],
+    ["扔出了", "rēng chū le", "threw out", "melemparkan"],
     ["震撼弹", "zhèn hàn dàn", "bombshell", "kejutan yang amat besar"],
-    ["。\n", "", "", ""], // 👈 藏在句号里换行
+    ["。\n", "", "", ""],
 
-    ["\n", "", "", ""], // 👈 只有这里用独立 \n，让系统切出“第2段”大卡片
+    ["\n", "", "", ""], // 👈 唯一的独立换行，用于切出系统标准的“第2段”卡片外框
 
     // 🌟 第 2 节：考验与挑战
-    ["考验", "kǎo yàn", "trial / ordeal", "cabaran / ujian"],
+    ["考验", "kǎo yàn", "trial", "ujian"],
     ["与", "yǔ", "and", "dan"],
     ["挑战\n", "tiǎo zhàn", "challenge", "cabaran"],
-    ["长长", "cháng cháng", "long", "panjang / yang panjang"],
+    
+    ["长长", "cháng cháng", "long", "panjang"],
     ["的", "de", "particle", "yang"],
     ["账单", "zhàng dān", "bill", "bil / tunggakan bayaran"],
     ["，\n", "", "", ""],
-    ["让", "ràng", "make / cause", "membuatkan / menyebabkan"],
+    
+    ["让", "ràng", "make / cause", "menyebabkan"],
     ["他", "tā", "him", "dia"],
     ["眉头", "méi tóu", "brows", "dahi / kening"],
     ["上", "shàng", "on", "atas"],
-    ["岁月", "suì yuè", "years / time", "masa / usia / usia tua"],
+    ["岁月", "suì yuè", "years / time", "masa / usia"],
     ["的", "de", "particle", "punya"],
     ["印记\n", "yìn jì", "imprint / mark", "kesan / tanda"],
+    
     ["又", "yòu", "again", "lagi / bertambah"],
-    ["增添", "zēng tiān", "add / increase", "menambah / meningkatkan"],
-    ["几道\n", "jǐ dào", "several (measure word for lines/wrinkles)", "beberapa jalur"],
-    ["思前想后", "sī qián xiǎng hòu", "ponder over / consider thoroughly", "berfikir masak-masak / mempertimbangkan perkara"],
+    ["增添", "zēng tiān", "add", "menambah"],
+    ["几道\n", "jǐ dào", "several (wrinkles)", "beberapa jalur kedutan"],
+    
+    ["思前想后", "sī qián xiǎng hòu", "ponder deeply", "berfikir masak-masak"],
     ["，\n", "", "", ""],
+    
     ["毅然", "yì rán", "resolutely", "dengan tekad / tabah"],
-    ["戴起", "dài qǐ", "put on (hat/helmet)", "memakai"],
+    ["戴起", "dài qǐ", "put on", "memakai"],
     ["头盔", "tóu kuī", "helmet", "topi keledar"],
     ["，", "", "", ""],
     ["骑上", "qí shàng", "ride on", "menunggang"],
     ["摩托车\n", "mó tuō chē", "motorcycle", "motosikal"],
+    
     ["把", "bǎ", "structural particle", ""],
-    ["汗水", "hàn shuǐ", "sweat", "air peluh / peluh"],
-    ["挥洒", "huī sǎ", "shed / sprinkle", "mencurahkan / menyembur"],
-    ["于", "yú", "on / at", "di / pada"],
+    ["汗水", "hàn shuǐ", "sweat", "air peluh"],
+    ["挥洒", "huī sǎ", "shed", "mencurahkan"],
+    ["于", "yú", "on", "di / pada"],
     ["路上\n", "lù shàng", "on the road", "jalan raya"],
-    ["肩负起\n", "jiān fù qǐ", "shoulder / take up the burden", "memikul / menggalas"],
-    ["让", "ràng", "let / make", "membiarkan / memastikan"],
-    ["订户", "dì hù", "customer", "pelanggan"],
-    ["及时", "jí shí", "in time / timely", "tepat pada masanya"],
+    
+    ["肩负起\n", "jiān fù qǐ", "shoulder burden", "memikul tanggungjawab"],
+    
+    ["让", "ràng", "let / make", "memastikan"],
+    ["订户", "dì hù", "customer", "pelanggan / pemesan"],
+    ["及时", "jí shí", "in time", "tepat pada masanya"],
     ["吃上", "chī shàng", "get to eat", "dapat makan"],
     ["热腾腾", "rè téng téng", "piping hot", "panas-panas / berasap panas"],
-    ["美食", "měi shí", "delicious food / delicacy", "makanan lazat"],
+    ["美食", "měi shí", "delicious food", "makanan lazat"],
     ["的", "de", "particle", "yang"],
-    ["重任", "zhòng rèn", "heavy responsibility / mission", "tanggungjawab berat / amanah"],
+    ["重任", "zhòng rèn", "heavy mission", "tanggungjawab berat"],
     ["。\n", "", "", ""],
 
     ["\n", "", "", ""], // 👈 切入第 3 节
 
     // 🌟 第 3 节：奔波
-    ["奔波\n", "bēn bō", "rush about / rush around", "ke sana ke mari / membanting tulang"],
-    ["阳光明媚", "yáng guāng míng mèi", "bright and beautiful sunshine", "cahaya matahari yang cerah"],
+    ["奔波\n", "bēn bō", "rushing around", "ke sana ke mari / membanting tulang"],
+    
+    ["阳光明媚", "yáng guāng míng mèi", "bright sunshine", "cahaya matahari cerah"],
     ["时", "shí", "when", "apabila / sewaktu"],
     ["，\n", "", "", ""],
-    ["无惧", "wú jù", "fearless / no fear", "tidak takut / tanpa ragu"],
+    
+    ["无惧", "wú jù", "fearless", "tidak takut / tanpa ragu"],
     ["骄阳", "jiāo yáng", "blazing sun", "matahari terik"],
-    ["的", "de", "particle", "punya / yang"],
-    ["炽烈", "chì liè", "fierce / scorching", "membara / sangat terik"],
+    ["的", "de", "particle", "yang"],
+    ["炽烈", "chì liè", "scorching", "membara / sangat terik"],
     ["；\n", "", "", ""],
-    ["疾风骤雨", "jí fēng zhòu yǔ", "gale and torrential rain", "angin kencang dan hujan lebat"],
+    
+    ["疾风骤雨", "jí fēng zhòu yǔ", "gale and rain", "angin kencang dan hujan lebat"],
     ["时", "shí", "when", "apabila / sewaktu"],
-    ["，", "", "", ""],
-    ["\n", "", "", ""],
-    ["无畏", "wú wèi", "fearless / undaunted", "tidak gentar / berani menghadapi"],
+    ["，\n", "", "", ""],
+    
+    ["无畏", "wú wèi", "undaunted", "tidak gentar / berani"],
     ["风雨", "fēng yǔ", "wind and rain", "ribut / angin dan hujan"],
-    ["的", "de", "particle", "punya / yang"],
-    ["猛烈", "měng liè", "fierce / violent", "hebat / kuat / dahsyat"],
+    ["的", "de", "particle", "yang"],
+    ["猛烈", "měng liè", "violent", "hebat / kuat / dahsyat"],
     ["，\n", "", "", ""],
-    ["依旧", "yī jiù", "still / as before", "masih / tetap seperti biasa"],
-    ["挺直", "tǐng zhí", "straighten (back)", "menegakkan / meluruskan"],
-    ["背脊", "bèi jí", "backbone / spine", "tulang belakang / belakang badan"],
+    
+    ["依旧", "yī jiù", "still", "masih / tetap"],
+    ["挺直", "tǐng zhí", "straighten", "menegakkan"],
+    ["背脊", "bèi jí", "backbone", "tulang belakang"],
     ["，\n", "", "", ""],
-    ["穿梭", "chuān suō", "shuttle / weave through", "berulang-alik / menyusup"],
-    ["于", "yú", "in / between", "di / dalam"],
-    ["车水马龙", "chē shuǐ mǎ lóng", "heavy traffic", "kesesakan lalu lintas / jalan raya yang sibuk"],
+    
+    ["穿梭", "chuān suō", "shuttle through", "berulang-alik / menyusup"],
+    ["于", "yú", "in", "di / dalam"],
+    ["车水马龙", "chē shuǐ mǎ lóng", "heavy traffic", "kesesakan lalu lintas yang sibuk"],
     ["的", "de", "particle", "yang"],
     ["大街", "dà jiē", "main street", "jalan besar"],
     ["和", "hé", "and", "dan"],
-    ["小巷", "xiǎo xiàng", "alley / lane", "lorong kecil"],
+    ["小巷", "xiǎo xiàng", "alley", "lorong kecil"],
     ["；\n", "", "", ""],
-    ["兢兢业业", "jīng jīng yè yè", "cautious and conscientious / dedicated", "dengan tekun dan dedikasi / cermat dan setia"],
+    
+    ["兢兢业业", "jīng jīng yè yè", "dedicated", "dengan tekun dan dedikasi"],
     ["，\n", "", "", ""],
+    
     ["把", "bǎ", "structural particle", ""],
     ["食物", "shí wù", "food", "makanan"],
-    ["保温袋", "bǎo wēn dài", "insulated bag / thermal bag", "beg penebat haba / beg simpan panas"],
+    ["保温袋", "bǎo wēn dài", "thermal bag", "beg penebat haba / beg simpan panas"],
     ["里", "lǐ", "inside", "dalam / di dalam"],
-    ["的", "de", "particle", "punya / yang"],
-    ["餐食\n", "cān shí", "meals / food", "makanan / hidangan"],
-    ["稳当地", "wěn dàng de", "steadily / safely", "dengan stabil / dengan selamat / dengan cermat"],
-    ["送达", "sòng dá", "deliver to", "menyampaikan / menghantar sampai ke"],
-    ["订户", "dì hù", "subscriber / customer", "pelanggan / pemesan"],
+    ["的", "de", "particle", "yang"],
+    ["餐食\n", "cān shí", "meals", "makanan / hidangan"],
+    
+    ["稳当地", "wěn dàng de", "safely", "dengan selamat / dengan cermat"],
+    ["送达", "sòng dá", "deliver to", "menghantar sampai ke"],
+    ["订户", "dì hù", "subscriber", "pelanggan / pemesan"],
     ["的", "de", "particle", "punya"],
-    ["手上", "shǒu shàng", "hands / into hands", "tangan / ke tangan"],
+    ["手上", "shǒu shàng", "hands", "tangan / ke tangan"],
     ["。\n", "", "", ""],
 
     ["\n", "", "", ""], // 👈 切入第 4 节
 
     // 🌟 第 4 节：坚持
-    ["坚持\n", "jiān chí", "persist / insist on", "ketabahan / kecekalan / terus berusaha"],
+    ["坚持\n", "jiān chí", "persistence", "ketabahan / kecekalan"],
+    
     ["他", "tā", "he", "Dia"],
-    ["深知", "shēn zhī", "know well / deeply appreciate", "amat mengetahui / sangat sedar"],
+    ["深知", "shēn zhī", "know well", "amat mengetahui / sangat sedar"],
     ["，", "", "", ""],
-    ["准时", "zhǔn shí", "on time / punctual", "tepat pada masanya / amanah masa"],
+    ["准时", "zhǔn shí", "on time", "tepat pada masanya"],
     ["是", "shì", "is", "adalah"],
-    ["承诺", "chéng nuò", "promise / commitment", "janji / komitmen"],
+    ["承诺", "chéng nuò", "promise", "janji / komitmen"],
     ["；\n", "", "", ""],
-    ["偶尔", "ǒu ěr", "occasionally / once in a while", "sekali-sekala / kadangkala"],
+    
+    ["偶尔", "ǒu ěr", "occasionally", "sekali-sekala / kadangkala"],
     ["因为", "yīn wèi", "because", "kerana"],
-    ["身体状态不佳", "shēn tǐ zhuàng tài bù jiā", "unwell / poor physical condition", "kesihatan kurang baik / badan kurang sihat"],
+    ["身体状态不佳", "shēn tǐ zhuàng tài bù jiā", "unwell", "kesihatan kurang baik"],
     ["或", "huò", "or", "atau"],
     ["路况", "lù kuàng", "road condition", "keadaan jalan raya"],
     ["，\n", "", "", ""],
-    ["而", "ér", "and thereby / leading to", "lalu / maka menyebabkan"],
+    
+    ["而", "ér", "leading to", "lalu / maka menyebabkan"],
     ["延误", "yán wù", "delay", "terlewat / tertangguh"],
     ["，\n", "", "", ""],
-    ["招致", "zhāo zhì", "incur / bring about", "mengundang / menyebabkan datangnya"],
+    
+    ["招致", "zhāo zhì", "incur / bring", "mengundang / menyebabkan"],
     ["订户", "dì hù", "customer", "pelanggan"],
     ["的", "de", "particle", "punya"],
-    ["埋怨", "mái yuàn", "complaint / blame", "rungutan / luahan rasa tidak puas hati"],
+    ["埋怨", "mái yàn", "complaint", "rungutan / tidak puas hati"],
     ["，\n", "", "", ""],
-    ["满肚子", "mǎn dù zi", "stomach full of / bellyful of", "sepenuh perut / penuh dengan"],
+    
+    ["满肚子", "mǎn dù zi", "stomach full of", "sepenuh perut / penuh dengan"],
     ["的", "de", "particle", "yang"],
-    ["苦楚", "kǔ chǔ", "suffering / pain / misery", "kesedihan / penderitaan / kepahitan"],
+    ["苦楚", "kǔ chǔ", "suffering", "kesedihan / penderitaan"],
     ["，\n", "", "", ""],
+    
     ["只能", "zhǐ néng", "could only", "hanya mampu / hanya boleh"],
-    ["化作", "huà zuò", "turn into / transform into", "menjadi / bertukar menjadi"],
-    ["一声", "yì shēng", "a sound of / a single", "satu"],
+    ["化作", "huà zuò", "turn into", "menjadi / bertukar menjadi"],
+    ["一声", "yì shēng", "a sound of", "satu"],
     ["叹息", "tàn xī", "sigh", "keluhan"],
     ["。\n", "", "", ""],
 
@@ -168,38 +196,43 @@ const lessonData = [
     // 🌟 第 5 节：汗水与游戏
     ["他", "tā", "he", "Dia"],
     ["在", "zài", "in", "di / dalam"],
-    ["风里雨里", "fēng lǐ yǔ lǐ", "through wind and rain", "redah angin dan hujan / susah payah"],
+    ["风里雨里", "fēng lǐ yǔ lǐ", "through storm", "redah angin dan hujan"],
     ["，", "", "", ""],
-    ["风尘仆仆", "fēng chén pú pǔ", "travel-worn / travel-weary", "penat lelah di perjalanan / bergelumang debu"],
+    ["风尘仆仆", "fēng chén pú pǔ", "travel-weary", "penat lelah di perjalanan"],
     ["，\n", "", "", ""],
-    ["分不清", "fēn bù qīng", "cannot distinguish", "tidak dapat membedakan"],
+    
+    ["分不清", "fēn bù qīng", "cannot tell", "tidak dapat membedakan"],
     ["是", "shì", "is", "adalah"],
     ["汗", "hàn", "sweat", "peluh"],
     ["是", "shì", "is", "atau"],
-    ["雨", "yǔ", "rain", "hujan"],
-    ["，\n", "", "", ""],
-    ["无暇", "wú xiá", "have no time to", "tidak ada masa untuk / tidak sempat"],
+    ["雨\n", "yǔ", "rain", "hujan"],
+    
+    ["无暇", "wú xiá", "have no time", "tidak ada masa / tidak sempat"],
     ["擦拭", "cā shì", "wipe", "mengelap / mengesat"],
     ["，", "", "", ""],
     ["依旧", "yī jiù", "still", "tetap / masih"],
-    ["抖擞精神", "dǒu sǒu jīng shén", "rouse one's spirit", "bersemangat tinggi / bangkitkan semangat"],
+    ["抖擞精神", "dǒu sǒu jīng shén", "rouse spirit", "bersemangat tinggi"],
     ["；\n", "", "", ""],
-    ["尽管", "jǐn guǎn", "even though / although", "walaupun / biarpun"],
-    ["容颜", "róng yán", "countenance / face appearance", "wajah / raut wajah"],
-    ["憔悴了", "qiáo cuì le", "haggard / worn out", "cengkung / lesu / cemas"],
+    
+    ["尽管", "jǐn guǎn", "even though", "walaupun / biarpun"],
+    ["容颜", "róng yán", "face look", "wajah / raut wajah"],
+    ["憔悴了", "qiáo cuì le", "haggard", "cengkung / lesu / cemas"],
     ["，\n", "", "", ""],
-    ["身心", "shēn xīn", "body and mind", "jasmani dan rohani / tubuh dan jiwa"],
-    ["疲惫了", "pí bèi le", "exhausted / tired out", "keletihan / teramat penat"],
+    
+    ["身心", "shēn xīn", "body and mind", "jasmani dan rohani"],
+    ["疲惫了", "pí bèi le", "exhausted", "keletihan / teramat penat"],
     ["，\n", "", "", ""],
+    
     ["也要", "yě yào", "also must", "tetap perlu / harus juga"],
-    ["规矩地", "guī ju de", "properly / following rules", "dengan berdisiplin / mengikut peraturan / dengan patuh"],
-    ["履行", "lǚ xíng", "fulfill / carry out", "menjalankan / menunaikan"],
-    ["职责", "zhí zé", "duty / responsibility", "tanggungjawab / tugas"],
+    ["规矩地", "guī ju de", "properly", "dengan berdisiplin / dengan patuh"],
+    ["履行", "lǚ xíng", "fulfill", "menjalankan / menunaikan"],
+    ["职责", "zhí zé", "duty", "tanggungjawab / tugas"],
     ["，\n", "", "", ""],
+    
     ["继续", "jì xù", "continue", "meneruskan"],
     ["与", "yǔ", "with", "dengan"],
     ["时间", "shí jiān", "time", "masa"],
-    ["追逐", "zhuī zhú", "chase / pursue", "kejar-mengejar / mengejar"],
+    ["追逐", "zhuī zhú", "chase", "kejar-mengejar / mengejar"],
     ["的", "de", "particle", "yang"],
     ["游戏", "yóu xì", "game", "permainan"],
     ["。\n", "", "", ""],
@@ -209,94 +242,112 @@ const lessonData = [
     // 🌟 第 6 节：温暖与动力
     ["温暖", "wēn nuǎn", "warmth", "Kehangatan"],
     ["与", "yǔ", "and", "dan"],
-    ["动力\n", "dòng lì", "driving force / motivation", "motivasi / dorongan / kekuatan"],
-    ["一份", "yí fèn", "a (measure word for meal/gift)", "sepotong / sebahagian / senaskah"],
+    ["动力\n", "dòng lì", "motivation", "motivasi / dorongan"],
+    
+    ["一份", "yí fèn", "a (meal)", "sepotong / sebahagian"],
     ["暖意融融", "nuǎn yì róng róng", "full of warmth", "yang penuh kehangatan / mesra"],
     ["的", "de", "particle", "yang"],
-    ["餐点", "cān diàn", "meal / snack", "hidangan makanan / makanan"],
+    ["餐点", "cān diàn", "meal", "hidangan makanan / makanan"],
     ["，\n", "", "", ""],
+    
     ["一罐", "yí guàn", "a can of", "setin"],
-    ["沁人心脾", "qìn rén xīn pí", "refreshing / gladdening the heart", "menyegarkan jiwa / meresap ke dalam hati"],
+    ["沁人心脾", "qìn rén xīn pí", "refreshing", "menyegarkan jiwa / meresap ke hati"],
     ["的", "de", "particle", "yang"],
-    ["饮料", "yǐn liào", "drink / beverage", "minuman"],
+    ["饮料", "yǐn liào", "drink", "minuman"],
     ["，\n", "", "", ""],
-    ["一声声", "yì shēng shēng", "sound after sound of", "ungkapan demi ungkapan / ucapan berulang kali"],
+    
+    ["一声声", "yì shēng shēng", "sound of", "ungkapan demi ungkapan"],
     ["真诚", "zhēn chéng", "sincere", "ikhlas / jujur"],
     ["的", "de", "particle", "yang"],
-    ["道谢", "dào xiè", "thanks / expression of gratitude", "ucapan terima kasih"],
+    ["道谢", "dào xiè", "thanks", "ucapan terima kasih"],
     ["，\n", "", "", ""],
+    
     ["家人", "jiā rén", "family", "ahli keluarga"],
     ["熟睡", "shú shuì", "fast asleep", "tidur nyenyak"],
     ["的", "de", "particle", "punya"],
-    ["面容", "miàn róng", "face / look", "wajah / raut wajah"],
+    ["面容", "miàn rong", "face", "wajah / raut wajah"],
     ["和", "hé", "and", "dan"],
-    ["贴心", "tiē xīn", "considerate / intimate", "ambil berat / intim / prihatin"],
+    ["贴心", "tiē xīn", "considerate", "ambil berat / prihatin"],
     ["的", "de", "particle", "yang"],
     ["关爱", "guān ài", "care and love", "kasih sayang / perhatian"],
     ["，\n", "", "", ""],
+    
     ["是", "shì", "are", "adalah"],
     ["这些", "zhè xiē", "these", "hari-hari / semua"],
-    ["日子", "rì zi", "days / time", "hari / masa"],
+    ["日子", "rì zi", "days", "hari / masa"],
     ["里\n", "lǐ", "in", "dalam"],
+    
     ["他", "tā", "him", "dia"],
     ["最大", "zuì dà", "the greatest", "paling besar"],
     ["的", "de", "particle", "punya"],
-    ["慰藉", "wèi jiè", "consolation / comfort", "sumber penghibur / kelegaan"],
+    ["慰藉", "wèi jiè", "consolation", "sumber penghibur / kelegaan"],
     ["与", "yǔ", "and", "dan"],
-    ["动力", "dòng lì", "motivation / power", "dorongan / kekuatan"],
+    ["动力", "dòng lì", "motivation", "dorongan / kekuatan"],
     ["。\n", "", "", ""],
 
     ["\n", "", "", ""], // 👈 切入第 7 节
 
     // 🌟 第 7 节：希冀
-    ["希冀\n", "xī jì", "hope / aspiration", "Harapan / impian"],
-    ["落寞", "luò mò", "lonely / desolate", "kesepian / kelesuan jiwa"],
+    ["希冀\n", "xī jì", "hope", "Harapan / impian"],
+    
+    ["落寞", "luò mò", "lonely", "kesepian / kelesuan jiwa"],
     ["、", "", "", ""],
-    ["徘徊", "pái huái", "pace back and forth", "buntu / terawang-awang"],
+    ["徘徊", "pái huái", "hesitate", "buntu / terawang-awang"],
     ["、", "", "", ""],
-    ["焦虑", "jiāo lǜ", "anxiety / worried", "keberangan / kerisauan / kebimbangan"],
+    ["焦虑", "jiāo lǜ", "anxiety", "kerisauan / kebimbangan"],
     ["不复存在", "bú fù cún zài", "no longer exist", "tidak wujud lagi / lenyap"],
     ["，\n", "", "", ""],
+    
     ["他", "tā", "he", "dia"],
-    ["奔驰", "bēn chí", "speeding / rushing", "memecut / berlari kencang"],
+    ["奔驰", "bēn chí", "speeding", "memecut / berlari kencang"],
     ["于", "yú", "on", "di / atas"],
     ["路上", "lù shàng", "on the road", "jalan raya"],
     ["的", "de", "particle", "yang"],
     ["汗水\n", "hàn shuǐ", "sweat", "air peluh"],
+    
     ["不会", "bú huì", "will not", "tidak akan"],
-    ["白费", "bái fèi", "be in vain / wasted", "sia-sia / terbuang begitu sahaja"],
+    ["白费", "bái fèi", "be in vain", "sia-sia / terbuang begitu sahaja"],
     ["。\n", "", "", ""],
+    
     ["他", "tā", "he", "Dia"],
     ["祈愿", "qí yuàn", "pray / wish", "berdoa / berharap agar"],
     ["人们", "rén men", "people", "orang ramai / masyarakat"],
     ["，\n", "", "", ""],
+    
     ["因为", "yīn wèi", "because of", "kerana"],
-    ["关怀", "guān huái", "care / concern", "keprihatinan / ambil berat"],
+    ["关怀", "guān huái", "care", "keprihatinan / ambil berat"],
     ["，\n", "", "", ""],
+    
     ["彼此", "bǐ cǐ", "each other", "satu sama lain"],
     ["更", "gèng", "more", "lebih / semakin"],
     ["愿意", "yuàn yì", "willing to", "sudi / rela"],
-    ["释出", "shì chū", "release / show", "menunjukkan / menghulurkan"],
-    ["善意", "shàn yì", "goodwill / kindness", "niat baik / kebaikan"],
+    ["释出", "shì chū", "show / release", "menunjukkan / menghulurkan"],
+    ["善意", "shàn yì", "goodwill", "niat baik / kebaikan"],
     ["；\n", "", "", ""],
+    
     ["因为", "yīn wèi", "because of", "kerana"],
-    ["包容", "bāo róng", "tolerance / inclusion", "sifat bertolak ansur / toleransi"],
+    ["包容", "bāo róng", "tolerance", "sifat bertolak ansur / toleransi"],
     ["，\n", "", "", ""],
+    
     ["大家", "dà jiā", "everyone", "semua orang"],
-    ["携手同心", "xié shǒu tóng xīn", "join hands and work together", "bergandeng bahu dan sehati sejiwa"],
+    ["携手同心", "xié shǒu tóng xīn", "work together", "bergandeng bahu sehati sejiwa"],
     ["，\n", "", "", ""],
-    ["跨越", "kuà yuè", "stride across / leap over", "merentasi / melampaui"],
-    ["焦躁", "jiāo zào", "impatient / irritable", "kegelisahan / sifat terburu-buru"],
+    
+    ["跨越", "kuà yuè", "stride across", "merentasi / melampaui"],
+    ["焦躁", "jiāo zào", "irritable", "kegelisahan / terburu-buru"],
     ["的", "de", "particle", "yang"],
-    ["隔阂", "gé hé", "barrier / estrangement", "jurang / sempadan pemisah"],
+    ["隔阂", "gé hé", "barrier", "jurang / sempadan pemisah"],
     ["，\n", "", "", ""],
+    
     ["一同", "yì tóng", "together", "bersama-sama"],
     ["迈向\n", "mài xiàng", "stride towards", "melangkah menuju ke"],
-    ["繁荣昌盛", "fán róng chāng shèng", "prosperous / thriving", "keamanan dan kemakmuran / kegemilangan"],
+    
+    ["繁荣昌盛", "fán róng chāng shèng", "prosperous", "keamanan dan kemakmuran / kegemilangan"],
     ["，\n", "", "", ""],
+    
     ["更", "gèng", "more", "lebih / semakin"],
-    ["具", "jù", "possess / have", "mempunyai / memiliki"],
-    ["同理心", "tóng lǐ xīn", "empathy", "sifat empati / memahami perasaan orang lain"],
+    ["具", "jù", "possess", "mempunyai / memiliki"],
+    ["同理心", "tóng lǐ xīn", "empathy", "sifat empati / memahami perasaan orang"],
     ["的", "de", "particle", "yang"],
     ["社会", "shè huì", "society", "masyarakat"]
 ];
@@ -306,7 +357,7 @@ const lessonAppreciation = [
   "【第2节：勇敢的决定】这一节写出了现实的压力（长长的账单）。爸爸虽然很烦恼，眉头都皱了，但他没有逃避。他勇敢、坚定地（毅然）戴上头盔、驾着摩托车出门，决定用汗水换取家人的温饱，当起送餐员。",
   "【第3节：马路上的奔波】诗人用对比的方法写爸爸工作有多辛苦：大太阳时不怕晒，下暴雨时不怕淋。在车子超级多（车水马龙）的大街小巷里，他总是挺直腰板、非常认真（兢兢业业）地把热腾腾的饭菜送到顾客手上。",
   "【第4节：流泪的委屈】这一节写到了送餐员的心酸。爸爸觉得准时送到是一种答应别人的信用（承诺）。但有时候因为生病或者路上塞车迟到了，换来的却是顾客的骂声（埋怨）。满肚子的伤心和辛苦，最后只能变成一声大大的叹息。",
-  "【第5节：和时间赛跑】爸爸在风雨里赶路，脸上全身都是湿的，分不清楚是汗水还是雨水。虽然身体超级累（疲惫）、样子也很憔悴，但他还是很守规矩，在马路上继续和时间赛跑，一定要完成自己的工作任务。",
+  "【第5节：和时间赛跑】爸爸在风雨里赶路，脸上全身都是湿的，分不清楚是汗水还是雨水。虽然身体超级累（疲惫）、样子也很憔悴，但他还是要守规矩，在马路上继续和时间赛跑，一定要完成自己的工作任务。",
   "【第6节：小小的幸福】是什么让爸爸能坚持下去？这一节写到了生活中的阳光：顾客说的一声‘谢谢’、送的一罐冷饮，还有回到家看到家人睡得很甜。这些小小的关心（慰藉），就是全天下爸爸最大的动力（Motivation）。",
   "【第7节：最美好的愿望】诗歌的最后，把感情升华（Level up）了。爸爸不只希望自己的汗水没有白费，他还希望人们能因为看到了彼此的辛苦，而变得更愿意包容、更有同理心（Empathy，会为别人着想），一起把社会变得更好。"
 ];
