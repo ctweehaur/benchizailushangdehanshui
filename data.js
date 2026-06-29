@@ -11,57 +11,38 @@ const lessonTitle = [
 ];
 
 const lessonData = [
-    // 🌟 第一节：震撼弹
+    // 🌟 震撼弹
     ["震撼弹", "zhèn hàn dàn", "shocking bombshell", "kejutan besar / bom jangka"],
-    ["\n", "", "", ""], // 👈 独立换行：实现这一句靠左对齐并换行
-    
     ["没有", "méi yǒu", "there is no", "tidak ada / tanpa"],
     ["硝烟", "xiāo yān", "gunsmoke", "asap meriam"],
     ["的", "de", "particle", "yang"],
     ["战争", "zhàn zhēng", "war", "peperangan / perang"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["悄然", "qiǎo rán", "quietly / silently", "secara senyap / diam-diam"],
     ["降临", "jiàng lín", "befall / arrive", "datang melanda / menjelma"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["回到", "huí dào", "return to", "pulang ke / kembali ke"],
     ["家里", "jiā lǐ", "home", "rumah / dalam rumah"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["他", "tā", "he", "dia"],
     ["从", "cóng", "from", "dari"],
     ["公事包", "gōng shì bāo", "briefcase", "beg kerja / beg bimbit"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["拿出了", "ná chū le", "took out", "mengeluarkan"],
     ["公司", "gōng sī", "company", "syarikat"],
     ["给", "gěi", "give", "memberi"],
     ["他", "tā", "him", "dia"],
     ["的", "de", "particle", "yang"],
     ["信", "xìn", "letter", "surat"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["给", "gěi", "to / for", "kepada / buat"],
     ["家人", "jiā rén", "family", "ahli keluarga"],
     ["扔出了", "rēng chū le", "threw out", "melemparkan"],
     ["震撼弹", "zhèn hàn dàn", "bombshell", "kejutan yang amat besar"],
     ["。", "", "", ""],
-    ["\n", "", "", ""], // 👈 句尾换行
-    
-    ["\n", "", "", ""], // 👈👈【第一节结束，空行】
 
-    // 🌟 第二节：考验与挑战
+    // 🌟 考验与挑战
     ["考验", "kǎo yàn", "trial", "ujian"],
     ["与", "yǔ", "and", "dan"],
     ["挑战", "tiǎo zhàn", "challenge", "cabaran"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["长长", "cháng cháng", "long", "panjang"],
     ["的", "de", "particle", "yang"],
     ["账单", "zhàng dān", "bill", "bil / tunggakan bayaran"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["让", "ràng", "make / cause", "menyebabkan"],
     ["他", "tā", "him", "dia"],
     ["眉头", "méi tóu", "brows", "dahi / kening"],
@@ -69,34 +50,21 @@ const lessonData = [
     ["岁月", "suì yuè", "years / time", "masa / usia"],
     ["的", "de", "particle", "punya"],
     ["印记", "yìn jì", "imprint / mark", "kesan / tanda"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["又", "yòu", "again", "lagi / bertambah"],
     ["增添", "zēng tiān", "add", "menambah"],
     ["几道", "jǐ dào", "several (wrinkles)", "beberapa jalur kedutan"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["思前想后", "sī qián xiǎng hòu", "ponder deeply", "berfikir masak-masak"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["毅然", "yì rán", "resolutely", "dengan tekad / tabah"],
     ["戴起", "dài qǐ", "put on", "memakai"],
     ["头盔", "tóu kuī", "helmet", "topi keledar"],
-    [" ", "", "", ""],
     ["骑上", "qí shàng", "ride on", "menunggang"],
     ["摩托车", "mó tuō chē", "motorcycle", "motosikal"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["把", "bǎ", "structural particle", ""],
     ["汗水", "hàn shuǐ", "sweat", "air peluh"],
     ["挥洒", "huī sǎ", "shed", "mencurahkan"],
     ["于", "yú", "on", "di / pada"],
     ["路上", "lù shàng", "on the road", "jalan raya"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["肩负起", "jiān fù qǐ", "shoulder burden", "memikul tanggungjawab"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["让", "ràng", "let / make", "membiarkan"],
     ["门户", "mén hù", "households / doors", "pintu rumah / pelanggan"],
     ["及时", "jí shí", "in time", "tepat pada masanya"],
@@ -106,39 +74,24 @@ const lessonData = [
     ["的", "de", "particle", "yang"],
     ["重任", "zhòng rèn", "heavy mission", "tanggungjawab berat"],
     ["。", "", "", ""],
-    ["\n", "", "", ""], // 👈 句尾换行
-    
-    ["\n", "", "", ""], // 👈👈【第二节结束，空行】
 
-    // 🌟 第三节：奔波
+    // 🌟 奔波
     ["奔波", "bēn bō", "rushing around", "ke sana ke mari / membanting tulang"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["阳光明媚", "yáng guāng míng mèi", "bright sunshine", "cahaya matahari cerah"],
     ["时", "shí", "when", "apabila / sewaktu"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["无惧", "wú jù", "fearless", "tidak takut / tanpa ragu"],
     ["骄阳", "jiāo yáng", "blazing sun", "matahari terik"],
     ["的", "de", "particle", "yang"],
     ["炽烈", "chì liè", "scorching", "membara / sangat terik"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["疾风骤雨", "jí fēng zhòu yǔ", "gale and rain", "angin kencang dan hujan lebat"],
     ["时", "shí", "when", "apabila / sewaktu"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["无畏", "wú wèi", "undaunted", "tidak gentar / berani"],
     ["风雨", "fēng yǔ", "wind and rain", "ribut / angin dan hujan"],
     ["的", "de", "particle", "yang"],
     ["猛烈", "měng liè", "violent", "hebat / kuat / dahsyat"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["依旧", "yī jiù", "still", "masih / tetap"],
     ["挺直", "tǐng zhí", "straighten", "menegakkan"],
     ["背脊", "bèi jí", "backbone", "tulang belakang"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["穿梭", "chuān suō", "shuttle through", "berulang-alik / menyusup"],
     ["于", "yú", "in", "di / dalam"],
     ["车水马龙", "chē shuǐ mǎ lóng", "heavy traffic", "kesesakan lalu lintas yang sibuk"],
@@ -146,109 +99,68 @@ const lessonData = [
     ["大街", "dà jiē", "main street", "jalan besar"],
     ["和", "hé", "and", "dan"],
     ["小巷", "xiǎo xiàng", "alley", "lorong kecil"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["兢兢业业", "jīng jīng yè yè", "dedicated", "dengan tekun dan dedikasi"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["把", "bǎ", "structural particle", ""],
     ["食物", "shí wù", "food", "makanan"],
     ["保温袋", "bǎo wēn dài", "thermal bag", "beg penebat haba"],
     ["里", "lǐ", "inside", "dalam / di dalam"],
     ["的", "de", "particle", "yang"],
     ["餐食", "cān shí", "meals", "makanan / hidangan"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["稳当地", "wěn dàng de", "safely", "dengan selamat / dengan cermat"],
     ["送达", "sòng dá", "deliver to", "menghantar sampai ke"],
     ["订户", "dì hù", "subscriber", "pelanggan / pemesan"],
     ["的", "de", "particle", "punya"],
     ["手上", "shǒu shàng", "hands", "tangan / ke tangan"],
     ["。", "", "", ""],
-    ["\n", "", "", ""], // 👈 句尾换行
-    
-    ["\n", "", "", ""], // 👈👈【第三节结束，空行】
 
-    // 🌟 第四节：坚持 (前半部分)
+    // 🌟 坚持
     ["坚持", "jiān chí", "persistence", "ketabahan / kecekalan"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["他", "tā", "he", "Dia"],
     ["深知", "shēn zhī", "know well", "amat mengetahui / sangat sedar"],
-    [" ", "", "", ""],
     ["准时", "zhǔn shí", "on time", "tepat pada masanya"],
     ["是", "shì", "is", "adalah"],
     ["承诺", "chéng nuò", "promise", "janji / komitmen"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["偶尔", "ǒu ěr", "occasionally", "sekali-sekala / kadangkala"],
     ["因为", "yīn wèi", "because", "kerana"],
     ["身体状态不佳", "shēn tǐ zhuàng tài bù jiā", "unwell", "kesihatan kurang baik"],
     ["或", "huò", "or", "atau"],
     ["路况", "lù kuàng", "road condition", "keadaan jalan raya"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
-    ["...而", "ér", "leading to", "lalu / maka menyebabkan"],
+    ["而", "ér", "leading to", "lalu / maka menyebabkan"],
     ["延误", "yán wù", "delay", "terlewat / tertangguh"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["招致", "zhāo zhì", "incur / bring", "mengundang / menyebabkan"],
     ["订户", "dì hù", "customer", "pelanggan"],
     ["的", "de", "particle", "punya"],
     ["埋怨", "mái yaùn", "complaint", "rungutan / tidak puas hati"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["满肚子", "mǎn dù zi", "stomach full of", "sepenuh perut / penuh dengan"],
     ["的", "de", "particle", "yang"],
     ["苦楚", "kǔ chǔ", "suffering", "kesedihan / penderitaan"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["只能", "zhǐ néng", "could only", "hanya mampu / hanya boleh"],
     ["化作", "huà zuò", "turn into", "menjadi / bertukar menjadi"],
     ["一声", "yì shēng", "a sound of", "satu"],
     ["叹息", "tàn xī", "sigh", "keluhan"],
     ["。", "", "", ""],
-    ["\n", "", "", ""], // 👈 句尾换行
-    
-    ["\n", "", "", ""], // 👈👈【第四节内部空行，但不切换大卡片】
-
-    // 🌟 第四节：坚持 (后半部分)
     ["他", "tā", "he", "Dia"],
     ["在", "zài", "in", "di / dalam"],
     ["风里雨里", "fēng lǐ yǔ lǐ", "through storm", "redah angin dan hujan"],
-    [" ", "", "", ""],
     ["风尘仆仆", "fēng chén pú pǔ", "travel-weary", "penat lelah di perjalanan"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["分不清", "fēn bù qīng", "cannot tell", "tidak dapat membedakan"],
     ["是", "shì", "is", "adalah"],
     ["汗", "hàn", "sweat", "peluh"],
     ["是", "shì", "is", "atau"],
     ["雨", "yǔ", "rain", "hujan"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["无暇", "wú xiá", "have no time", "tidak ada masa / tidak sempat"],
     ["擦拭", "cā shì", "wipe", "mengelap / mengesat"],
-    [" ", "", "", ""],
     ["依旧", "yī jiù", "still", "tetap / masih"],
     ["抖擞精神", "dǒu sǒu jīng shén", "rouse spirit", "bersemangat tinggi"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["尽管", "jǐn guǎn", "even though", "walaupun / biarpun"],
     ["容颜", "róng yán", "face look", "wajah / raut wajah"],
     ["憔悴了", "qiáo cuì le", "haggard", "cengkung / lesu"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["身心", "shēn xīn", "body and mind", "jasmani dan rohani"],
     ["疲惫了", "pí bèi le", "exhausted", "keletihan / teramat penat"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["也要", "yě yào", "also must", "tetap perlu / harus juga"],
     ["规矩地", "guī ju de", "properly", "dengan berdisiplin / dengan patuh"],
     ["履行", "lǚ xíng", "fulfill", "menjalankan / menunaikan"],
     ["职责", "zhí zé", "duty", "tanggungjawab / tugas"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["继续", "jì xù", "continue", "meneruskan"],
     ["与", "yǔ", "with", "dengan"],
     ["时间", "shí jiān", "time", "masa"],
@@ -256,34 +168,23 @@ const lessonData = [
     ["的", "de", "particle", "yang"],
     ["游戏", "yóu xì", "game", "permainan"],
     ["。", "", "", ""],
-    ["\n", "", "", ""], // 👈 句尾换行
-    
-    ["\n", "", "", ""], // 👈👈【第四节完全结束，空行】
 
-    // 🌟 第五节：温暖与动力
+    // 🌟 温暖与动力
     ["温暖", "wēn nuǎn", "warmth", "Kehangatan"],
     ["与", "yǔ", "and", "dan"],
     ["动力", "dòng lì", "motivation", "motivasi / dorongan"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["一份", "yí fèn", "a (meal)", "sepotong / sebahagian"],
     ["暖意融融", "nuǎn yì róng róng", "full of warmth", "yang penuh kehangatan / mesra"],
     ["的", "de", "particle", "yang"],
     ["餐点", "cān diàn", "meal", "hidangan makanan / makanan"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["一罐", "yí guàn", "a can of", "setin"],
     ["沁人心脾", "qìn rén xīn pí", "refreshing", "menyegarkan jiwa / meresap ke hati"],
     ["的", "de", "particle", "yang"],
     ["饮料", "yǐn liào", "drink", "minuman"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["一声声", "yì shēng shēng", "sound of", "ungkapan demi ungkapan"],
     ["真诚", "zhēn chéng", "sincere", "ikhlas / jujur"],
     ["的", "de", "particle", "yang"],
     ["道谢", "dào xiè", "thanks", "ucapan terima kasih"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["家人", "jiā rén", "family", "ahli keluarga"],
     ["熟睡", "shú shuì", "fast asleep", "tidur nyenyak"],
     ["的", "de", "particle", "punya"],
@@ -292,14 +193,10 @@ const lessonData = [
     ["贴心", "tiē xīn", "considerate", "ambil berat / prihatin"],
     ["的", "de", "particle", "yang"],
     ["关爱", "guān ài", "care and love", "kasih sayang / perhatian"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["是", "shì", "are", "adalah"],
     ["这些", "zhè xiē", "these", "hari-hari / semua"],
     ["日子", "rì zi", "days", "hari / masa"],
     ["里", "lǐ", "in", "dalam"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["他", "tā", "him", "dia"],
     ["最大", "zuì dà", "the greatest", "paling besar"],
     ["的", "de", "particle", "punya"],
@@ -307,14 +204,9 @@ const lessonData = [
     ["与", "yǔ", "and", "dan"],
     ["动力", "dòng lì", "motivation", "dorongan / kekuatan"],
     ["。", "", "", ""],
-    ["\n", "", "", ""], // 👈 句尾换行
-    
-    ["\n", "", "", ""], // 👈👈【第五节结束，空行】
 
-    // 🌟 第六节：希冀
+    // 🌟 希冀
     ["希冀", "xī jì", "hope", "Harapan / impian"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["落寞", "luò mò", "lonely", "kesepian / kelesuan jiwa"],
     ["、", "", "", ""],
     ["徘徊", "pái huái", "hesitate", "buntu / terawang-awang"],
@@ -322,65 +214,42 @@ const lessonData = [
     ["焦虑", "jiāo lǜ", "anxiety", "kerisauan / kebimbangan"],
     ["不复存在", "bú fù cún zài", "no longer exist", "tidak wujud lagi / lenyap"],
     ["，", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["他", "tā", "he", "dia"],
     ["奔驰", "bēn chí", "speeding", "memecut / berlari kencang"],
     ["于", "yú", "on", "di / atas"],
     ["路上", "lù shàng", "on the road", "jalan raya"],
     ["的", "de", "particle", "yang"],
     ["汗水", "hàn shuǐ", "sweat", "air peluh"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["不会", "bú huì", "will not", "tidak akan"],
     ["白费", "bái fèi", "be in vain", "sia-sia / terbuang begitu sahaja"],
     ["。", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["他", "tā", "he", "Dia"],
     ["祈愿", "qí yuàn", "pray / wish", "berdoa / berharap agar"],
     ["人们", "rén men", "people", "orang ramai / masyarakat"],
     ["，", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["因为", "yīn wèi", "because of", "kerana"],
     ["关怀", "guān huái", "care", "keprihatinan / ambil berat"],
     ["，", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["彼此", "bǐ cǐ", "each other", "satu sama lain"],
     ["更", "gèng", "more", "lebih / semakin"],
     ["愿意", "yuàn yì", "willing to", "sudi / rela"],
     ["释出", "shì chū", "show / release", "menunjukkan / menghulurkan"],
     ["善意", "shàn yì", "goodwill", "niat baik / kebaikan"],
     ["；", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["因为", "yīn wèi", "because of", "kerana"],
     ["包容", "bāo róng", "tolerance", "sifat bertolak ansur / toleransi"],
     ["，", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["大家", "dà jiā", "everyone", "semua orang"],
     ["携手同心", "xié shǒu tóng xīn", "work together", "bergandeng bahu sehati sejiwa"],
     ["，", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["跨越", "kuà yuè", "stride across", "merentasi / melampaui"],
     ["焦躁", "jiāo zào", "irritable", "kegelisahan / terburu-buru"],
     ["的", "de", "particle", "yang"],
     ["隔阂", "gé hé", "barrier", "jurang / sempadan pemisah"],
-    ["，", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["一同", "yì tóng", "together", "bersama-sama"],
     ["迈向", "mài xiàng", "stride towards", "melangkah menuju ke"],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["繁荣昌盛", "fán róng chāng shèng", "prosperous", "keamanan dan kemakmuran / kegemilangan"],
     ["，", "", "", ""],
-    ["\n", "", "", ""], // 👈 独立换行
-    
     ["更", "gèng", "more", "lebih / semakin"],
     ["具", "jù", "possess", "mempunyai / memiliki"],
     ["同理心", "tóng lǐ xīn", "empathy", "sifat empati / memahami perasaan orang"],
@@ -388,17 +257,6 @@ const lessonData = [
     ["社会", "shè huì", "society", "masyarakat"]
 ];
 
-// 🌟 这里进行严格的空行对齐，确保后台绝对不会因行数不匹配而渲染崩溃
 const lessonAppreciation = [
-  "【第1节：震撼的开场】新诗的一开始就用‘没有硝烟的战争’来形容失业潮或大环境不好。爸爸一回到家，从公事包拿出一封信，对全家来说就像丢下一个大炸弹（Kejutan besar），家里的生活要改变了。",
-  "", "", "", "", "", "", "", 
-  "【第2节：勇敢的决定】这一节写出了现实的压力（长长的账单）。爸爸虽然很烦恼，眉头都皱了，但他没有逃避。他勇敢、坚定地（毅然）戴上头盔、驾着摩托车出门，决定用汗水换取家人的温饱，当起送餐员。",
-  "", "", "", "", "", "", "", "", "", "",
-  "【第3节：马路上的奔波】诗人用对比的方法写爸爸工作有多辛苦：大太阳时不怕晒，下暴雨时不怕淋。在车子超级多（车水马龙）的大街小巷里，他总是挺直腰板、非常认真（兢兢业业）地把热腾腾的饭菜送到顾客手上。",
-  "", "", "", "", "", "", "", "", "", 
-  "【第4节：坚持与不放弃】这一节写到了送餐员的心酸和职业操守。不管是生病、遇到塞车迟到而被顾客骂（埋怨），还是全身湿透分不清汗水雨水，爸爸都强打起精神（抖擞精神），跟着规矩、像和时间玩追逐游戏一样坚持把职责完成。",
-  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
-  "【第5节：小小的幸福】是什么让爸爸能坚持下去？这一节写到了生活中的阳光：顾客说的一声‘谢谢’、送的一罐冷饮，还有回到家看到家人睡得很甜。这些小小的关心（慰藉），就是全天下爸爸最大的动力（Motivation）。",
-  "", "", "", "", "", "", "", 
-  "【第6节：最美好的愿望】诗歌的最后，把感情升华（Level up）了。爸爸不只希望自己的汗水没有白费，他还希望人们能因为看到了彼此的辛苦，而变得更愿意包容、更有同理心（Empathy，会为别人着想），一起把社会变得更好。"
+  "【核心教学赏析】整首新诗通过描写一位在社会底层拼搏的送餐员爸爸，展现了当代家庭中默默付出的父爱。从开头失业危机带来的家庭压力，到爸爸不惧骄阳暴雨在马路上与时间赛跑的心酸，诗歌极其细腻地刻画了劳动者的敬业与尊严。虽然工作中有顾客的不解与埋怨，但那份热腾腾的餐点、一声真诚的谢谢以及家人贴心的爱，构成了普通人坚守的最大动力。整首诗最终超越了个人和小家庭的叙事，升华成为对全社会多一些包容、关怀与同理心的美好祈愿，是一篇兼具情感张力与社会现实教育意义的优秀新诗教材。"
 ];
