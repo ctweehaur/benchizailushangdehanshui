@@ -33,7 +33,7 @@ const lessonData = [
     ["给", "gěi", "to / for", "kepada / buat"],
     ["家人", "jiā rén", "family", "ahli keluarga"],
     ["扔出了", "rēng chū le", "threw out", "melemparkan"],
-    ["震撼弹\n\n", "zhèn hàn dàn", "bombshell", "kejutan yang amat besar"], // 👈 完美换至下一张图
+    ["震撼弹\n\n", "zhèn hàn dàn", "bombshell", "kejutan yang amat besar"],
 
     // 🌟 第 2 节：考验与挑战
     ["考验", "kǎo yàn", "trial", "ujian"],
@@ -72,7 +72,7 @@ const lessonData = [
     ["热腾腾", "rè téng téng", "piping hot", "panas-panas / berasap panas"],
     ["美食", "měi shí", "delicious food", "makanan lazat"],
     ["的", "de", "particle", "yang"],
-    ["重任\n\n", "zhòng rèn", "heavy mission", "tanggungjawab berat"], // 👈 完美换至下一张图
+    ["重任\n\n", "zhòng rèn", "heavy mission", "tanggungjawab berat"],
 
     // 🌟 第 3 节：奔波
     ["奔波\n", "bēn bō", "rushing around", "ke sana ke mari / membanting tulang"],
@@ -109,9 +109,9 @@ const lessonData = [
     ["送达", "sòng dá", "deliver to", "menghantar sampai ke"],
     ["订户", "dì hù", "subscriber", "pelanggan / pemesan"],
     ["的", "de", "particle", "punya"],
-    ["手上\n\n", "shǒu shàng", "hands", "tangan / ke tangan"], // 👈 完美换至下一张图
+    ["手上\n\n", "shǒu shàng", "hands", "tangan / ke tangan"],
 
-    // 🌟 第 4 节：坚持 (全合并版)
+    // 🌟 第 4 节：坚持 (包含叹息后的空行 \n，但依然保留在同一节)
     ["坚持\n", "jiān chí", "persistence", "ketabahan / kecekalan"],
     ["他", "tā", "he", "Dia"],
     ["深知", "shēn zhī", "know well", "amat mengetahui / sangat sedar"],
@@ -136,7 +136,7 @@ const lessonData = [
     ["只能", "zhǐ néng", "could only", "hanya mampu / hanya boleh"],
     ["化作", "huà zuò", "turn into", "menjadi / bertukar menjadi"],
     ["一声", "yì shēng", "a sound of", "satu"],
-    ["叹息\n\n", "tàn xī", "sigh", "keluhan"], 
+    ["叹息\n\n\n", "tàn xī", "sigh", "keluhan"], // 👈 这里用三个 \n 创造空行，但绝不在外层分节
     ["他", "tā", "he", "Dia"],
     ["在", "zài", "in", "di / dalam"],
     ["风里雨里", "fēng lǐ yǔ lǐ", "through storm", "redah angin dan hujan"],
@@ -166,8 +166,7 @@ const lessonData = [
     ["时间", "shí jiān", "time", "masa"],
     ["追逐", "zhuī zhú", "chase", "kejar-mengejar / mengejar"],
     ["的", "de", "particle", "yang"],
-    ["游戏", "yóu xì", "game", "permainan"],
-    ["。\n\n", "", "", ""], // 👈 完美换至下一张图
+    ["游戏\n\n", "yóu xì", "game", "permainan"], // 👈 完美换至下一张图
 
     // 🌟 第 5 节：温暖与动力
     ["温暖", "wēn nuǎn", "warmth", "Kehangatan"],
@@ -194,7 +193,7 @@ const lessonData = [
     ["的", "de", "particle", "yang"],
     ["关爱\n", "guān ài", "care and love", "kasih sayang / perhatian"],
     ["是", "shì", "are", "adalah"],
-    ["these", "zhè xiē", "these", "hari-hari / semua"],
+    ["这些", "zhè xiē", "these", "hari-hari / semua"],
     ["日子", "rì zi", "days", "hari / masa"],
     ["里\n", "lǐ", "in", "dalam"],
     ["他", "tā", "him", "dia"],
@@ -223,7 +222,7 @@ const lessonData = [
     ["他", "tā", "he", "Dia"],
     ["祈愿", "qí yuàn", "pray / wish", "berdoa / berharap agar"],
     ["人们\n", "rén men", "people", "orang ramai / masyarakat"],
-    ["because", "yīn wèi", "because of", "kerana"],
+    ["因为", "yīn wèi", "because of", "kerana"],
     ["关怀\n", "guān huái", "care", "keprihatinan / ambil berat"],
     ["彼此", "bǐ cǐ", "each other", "satu sama lain"],
     ["更", "gèng", "more", "lebih / semakin"],
@@ -237,7 +236,7 @@ const lessonData = [
     ["跨越", "kuà yuè", "stride across", "merentasi / melampaui"],
     ["焦躁", "jiāo zào", "irritable", "kegelisahan / terburu-buru"],
     ["的", "de", "particle", "yang"],
-    ["隔阂\n", "g&eacute; h&eacute;", "barrier", "jurang / sempadan pemisah"],
+    ["隔阂\n", "gé hé", "barrier", "jurang / sempadan pemisah"],
     ["一同", "yì tóng", "together", "bersama-sama"],
     ["迈向\n", "mài xiàng", "stride towards", "melangkah menuju ke"],
     ["繁荣昌盛\n", "fán róng chāng shèng", "prosperous", "keamanan dan kemakmuran / kegemilangan"],
