@@ -108,9 +108,18 @@ function render() {
     }
 
     lessonData.forEach((d, i) => {
-        if (d[0] === "\n") { finalizeParagraph(p); p = document.createElement("p"); }
-        else if (d[1] === "") { let s = document.createElement("span"); s.innerText = d[0]; p.appendChild(s); }
-        else {
+        if (d[0] === "\n") { 
+            finalizeParagraph(p); 
+            p = document.createElement("p"); 
+        } else if (d[0] === "<br>") { 
+            // 🆕 诗歌换行：在当前段落内插入 <br>
+            let br = document.createElement("br");
+            p.appendChild(br);
+        } else if (d[1] === "") { 
+            let s = document.createElement("span"); 
+            s.innerText = d[0]; 
+            p.appendChild(s); 
+        } else {
             let r = document.createElement("ruby"); 
             r.setAttribute("data-word-index", i);
             r.onclick = (e) => { 
@@ -238,7 +247,6 @@ function toggleTeacherMode() {
     if (topAnalysis && topAnalysisContent) {
         if (isTeacherMode && typeof lessonTeacherAnalysis !== 'undefined' && lessonTeacherAnalysis.overview) {
             topAnalysis.style.display = "block";
-            // 🆕 总览标题也根据是否为诗歌显示
             topAnalysisContent.innerHTML = `<strong>💡 课文总览与赏析要点：</strong><br>${lessonTeacherAnalysis.overview}`;
         } else {
             topAnalysis.style.display = "none";
