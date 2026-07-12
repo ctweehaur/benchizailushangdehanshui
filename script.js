@@ -10,6 +10,12 @@ let isLocked = false;
 let isTeacherMode = false; // 文本赏析状态开关
 let userSelectedAnswers = {}; // 存储学生当前选中的临时答案 (格式： { 题目ID: "选中的选项完整文本" })
 
+// 🆕 判断当前文章是否为诗歌体裁
+function isPoemLesson() {
+    const poemTitles = ["奔驰在路上的汗水"];
+    return poemTitles.includes(lessonTitle);
+}
+
 window.onload = function() {
     // 初始化网页标题
     document.getElementById('articleTitle').innerText = lessonTitle;
@@ -53,6 +59,7 @@ function render() {
         if (paragraphElement.childNodes.length === 0) return;
         const textContent = paragraphElement.innerText.trim();
         const isAuthorLineAtEnd = (textContent.startsWith("（") && textContent.includes("《"));
+        const unitLabel = isPoemLesson() ? "节" : "段";
         
         if (isAuthorLineAtEnd) {
             paragraphElement.style.textIndent = "0";
@@ -69,7 +76,8 @@ function render() {
             
             let s = document.createElement("span");
             s.className = "p-index";
-            s.innerText = "第" + pNum + "段";
+            // 🆕 根据是否为诗歌显示"节"或"段"
+            s.innerText = "第" + pNum + unitLabel;
             s.style.position = "absolute";
             s.style.left = "-55px"; 
             s.style.top = "4px"; 
@@ -78,7 +86,7 @@ function render() {
             paragraphElement.insertBefore(s, paragraphElement.firstChild); 
             cnt.appendChild(paragraphElement);
 
-            // 👁️ 赏析节点预渲染
+            // 👁️ 赏析节点预渲染（诗歌显示"节"，其他显示"段"）
             if (typeof lessonTeacherAnalysis !== 'undefined' && lessonTeacherAnalysis.paragraphs && lessonTeacherAnalysis.paragraphs[pNum]) {
                 let pAnalysis = document.createElement("div");
                 pAnalysis.id = `p-analysis-${pNum}`;
@@ -88,7 +96,8 @@ function render() {
                 pAnalysis.style.fontSize = "13.5px";
                 pAnalysis.style.borderRadius = "4px";
                 pAnalysis.style.textIndent = "0";
-                pAnalysis.innerHTML = `<strong>🔍 第 ${pNum} 段文本赏析：</strong>${lessonTeacherAnalysis.paragraphs[pNum]}`;
+                // 🆕 赏析标题也根据是否为诗歌显示"节"或"段"
+                pAnalysis.innerHTML = `<strong>🔍 第 ${pNum} ${unitLabel}赏析：</strong>${lessonTeacherAnalysis.paragraphs[pNum]}`;
                 
                 pAnalysis.style.display = isTeacherMode ? "block" : "none";
                 cnt.appendChild(pAnalysis);
@@ -214,6 +223,7 @@ function renderMultipleChoiceQuizzes() {
 function toggleTeacherMode() {
     isTeacherMode = !isTeacherMode;
     const btn = document.getElementById('teacherToggleBtn');
+    const unitLabel = isPoemLesson() ? "节" : "段";
     
     if (isTeacherMode) {
         btn.innerText = "❌ 关闭文本赏析";
@@ -228,6 +238,7 @@ function toggleTeacherMode() {
     if (topAnalysis && topAnalysisContent) {
         if (isTeacherMode && typeof lessonTeacherAnalysis !== 'undefined' && lessonTeacherAnalysis.overview) {
             topAnalysis.style.display = "block";
+            // 🆕 总览标题也根据是否为诗歌显示
             topAnalysisContent.innerHTML = `<strong>💡 课文总览与赏析要点：</strong><br>${lessonTeacherAnalysis.overview}`;
         } else {
             topAnalysis.style.display = "none";
@@ -236,6 +247,13 @@ function toggleTeacherMode() {
 
     const pPanels = document.querySelectorAll('.teacher-p-analysis');
     pPanels.forEach(panel => {
+        // 更新赏析面板中的"段"为"节"（如果是诗歌）
+        if (isPoemLesson()) {
+            panel.innerHTML = panel.innerHTML.replace(/第 \d+ 段文本赏析/g, function(match) {
+                const num = match.match(/\d+/);
+                return `第 ${num} 节赏析`;
+            });
+        }
         panel.style.display = isTeacherMode ? "block" : "none";
     });
 
